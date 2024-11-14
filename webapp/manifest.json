@@ -3,7 +3,6 @@
 	"sap.app": {
 		"id": "ui5.databinding",
 		"type": "application",
-        "title": "My Application Title",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}
@@ -17,27 +16,25 @@
 		}
 	},
 	"sap.ui5": {
-        "handleValidation": true,
+		"handleValidation": true,
 		"dependencies": {
 			"minUI5Version": "1.120.0",
 			"libs": {
 				"sap.m": {},
 				"sap.ui.core": {},
-                "sap.ui.layout": {}
+				"sap.ui.layout": {}
 			}
 		},
-      
 		"models": {
 			"": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "./model/data.json"
-			}
-		},
-        "products" : {
+			},
+			"products" : {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "./model/Products.json"
 			},
-        "i18n": {
+			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
 					"bundleName": "ui5.databinding.i18n.i18n",
@@ -47,15 +44,12 @@
 					],
 					"fallbackLocale": ""
 				}
-			},
+			}
+		},
 		"rootView": {
 			"viewName": "ui5.databinding.view.App",
 			"type": "XML",
 			"id": "app"
-		},
-        "contentDensities": {
-      "compact": true,
-      "cozy": true
-    }
+		}
 	}
 }
